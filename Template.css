@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body
+{
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.Checklist
+{
+  text-align: center;
+  border: 30px solid #fbce07dc;
+  height: 50%;
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+.Checklist .Page
+{
+  display: none;
+}
+
+.Page
+{
+  background-color: white;
+  opacity: 95%;
+  padding: 20px;
+}
+
+#StartInspectionPage
+{
+  display: block;
+}
+
+
+/* ----------------------- BUTTONS -----------------------*/
+
+.PreviousButton, .ContinueButton, .CloseButton
+{
+  width:fit-content;
+  height: fit-content;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.688);
+  border-collapse: collapse;
+  border-radius: 15px;
+}
+
+.ContinueButton:hover
+{
+  background-color: #1db11a;
+}
+
+.ContinueButton:active
+{
+  background-color: #148612;
+}
+
+.PreviousButton:hover
+{
+  background-color: #2cabdd;
+}
+
+.PreviousButton:active
+{
+  background-color: #1e82a9;
+}
+
+.CloseButton
+{
+  background-color: #ED1C24;
+}
+
+.CloseButton:active
+{
+  background-color: #b0171c;
+}
+/* ----------------------- HEADINGS -----------------------*/
+
+.Heading
+{
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#ConclusiveRemarksPage .OrangeButton, #ConclusiveRemarksPage  .RedButton, #ConclusiveRemarksPage .YellowButton, #ConclusiveRemarksPage .OKButton
+{
+  margin-right: 0%;
+  margin-left: 80%;
+}*/
+
+/*#ConclusiveRemarksPage .container
+{
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: left;
+}*/
+
+/* Hide the browser's default checkbox */
+/*#ConclusiveRemarksPage .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  aside{
+    margin-left: 50%;
+  }
+
+ table
+  {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    /*border-collapse: collapse;*/
+    align-self: center;
+    
+  }
+
+  th
+  {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 20px;
+    border-collapse: separate;
+    border-bottom: 1px solid #ddd;
+
+  }
+
+  td
+  {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Create a custom radio button */
+  .OKButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left:50%;
+    margin-right: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .OKButton {
+    background-color: #1caf19;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .OKButton {
+    background-color: #1caf19;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .OKButton:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .OKButton:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .OKButton:after {
+    margin-left: auto;
+    margin-right: auto;
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  
+  /* Create a custom radio button */
+  .YellowButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left:50%;
+    margin-right: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .YellowButton {
+    background-color: #e1ec14;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .YellowButton {
+    background-color: #e1ec14;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .YellowButton:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .YellowButton:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .YellowButton:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .container {
+    display:block;
+    position: relative;
+    /*padding-left: 40px;
+    margin-bottom: 12px;*/
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left:auto;
+      margin-right: auto;
+      text-align: center;
+  }
+  
+  
+
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .RedButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left:50%;
+    margin-right: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .RedButton {
+    background-color: #f32121;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .RedButton {
+    background-color: #f32121;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .RedButton:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .RedButton:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .RedButton:after {
+    margin-left: auto;
+    margin-right: auto;
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+      margin: auto;
+  }
+
+
+
+
+
+  /* Create a custom radio button */
+  .OrangeButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left:50%;
+    margin-right: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .OrangeButton {
+    background-color: #f37221;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .OrangeButton {
+    background-color: #f37221;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .OrangeButton:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .OrangeButton:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .OrangeButton:after {
+    margin-left: auto;
+    margin-right: auto;
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+      margin: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The container */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 20%;
+  text-align: justify;
+}
+
+/* Hide the browser's default checkbox */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(221, 218, 218);
+}
+
+/* On mouse-over, add a grey background color */
+.container1:hover input ~ .checkmark1 {
+  background-color: rgb(235, 235, 1);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container1 input:checked ~ .checkmark1 {
+  background-color: white;
+  border: 2px solid rgb(235, 235, 1);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container1 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(235, 235, 1);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The container */
+.container2 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 20%;
+  text-align: justify;
+}
+
+/* Hide the browser's default radio button */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ #OKButton{
+  background-color: #1caf19;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ #OKButton{
+  background-color: #1caf19;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ #YellowButton{
+  background-color: #e1ec14;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ #YellowButton{
+  background-color: #e1ec14;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ #OrangeButton{
+  background-color: #f37221;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ #OrangeButton{
+  background-color: #f37221;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ #RedButton{
+  background-color: #f32121;
+}
+
+/* When the radio button is checked, add a blue background */
+.container2 input:checked ~ #RedButton{
+  background-color: #f32121;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container2 input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container2 .checkmark2:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3abe06;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ED1C24;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+.ITEM
+{
+    background-color: black;
+    display: inline-flex;
+    position: relative;
+    width:25px;
+    height: 25px;
+    text-align: center;
+    background-color: #1caf19;
+    border-radius: 50%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ITEM input {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+}
+
+.Green 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(12, 2, 2);
+    border-radius: 50%;
+}
+
+.ITEM:hover input ~ .Green
+{
+    background-color: #4a14ec;
+}
+
+.ITEM:hover input:checked ~ .Green
+{
+    background-color: #e1ec14;
+}
+
+.Green::after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.ITEM input:checked ~ .Green:after
+{
+    display: inline-flex;
+}
+
+.ITEM .Green:after {
+    display: inline-flex;
+    top: 9px;
+   left: 9px;
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background: white;
+}

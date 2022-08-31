@@ -1,0 +1,198 @@
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Inspection Collection</title>
+            <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"-->
+            <link rel = "stylesheet" href = "Template.css">
+                    <!--Give webpage a favicon icon-->
+        <link rel = "icon" type = "image/x-icon" href = "Favicon Images/favicon.ico">
+        <!--Icons Link-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,-25" />
+
+            <style>
+                table
+                {
+                    border-collapse: collapse;
+                }
+
+                table tr:hover
+                {
+                    background-color: #ccc;
+                    border: 1px solid #ccc;
+                }
+
+                button
+                {
+                    font-family: 'League Spartan';
+                    width: 100%;
+                    height: 100%;
+                    border: 5px solid rgb(52, 51, 51);
+                    background-color:  #FFD500;
+                    padding: 20px;
+                    color: rgb(52, 51, 51);
+                    text-align: center;
+                    cursor:pointer;
+                }
+
+                button:hover
+                {
+                    border: 5px solid #FFD500;
+                    background-color:  rgb(52, 51, 51);
+                    padding: 20px;
+                    color: #FFD500;
+                    font-weight: bold;
+                }
+
+                button:active
+                {
+                    border: 5px solid rgb(52, 51, 51);
+                    background-color:  #FFD500;
+                    padding: 20px;
+                    color: rgb(52, 51, 51);
+                }
+
+                .material-icons
+                {
+                    color: rgb(52, 51, 51);
+                    font-size: 60px;
+                    transition-property: color;
+                }
+
+                button:hover .material-icons
+                {
+                    color: #FFD500;
+                    font-size: 70px;
+                }
+
+                button:active .material-icons
+                {
+                    color: rgb(52, 51, 51);
+                    font-size: 70px;
+                }
+
+                .BackButton
+                {
+                    margin: 1%;
+                    position: absolute;
+                    width:max-content;
+                    height: max-content;
+                    border-radius: 50%;
+                    color: rgb(0, 0, 0);
+                    background-color: #ED1C24;
+                    border: 5px solid black;
+                }
+
+                .BackButton .material-symbols-rounded
+                {
+                    color:rgb(0, 0, 0);
+                    font-size: 40px;
+                }
+
+                .BackButton:hover
+                {
+                    position:absolute;
+                    background-color: #ED1C24;
+                    border: 5px solid black;
+                }
+
+                .BackButton:hover .material-symbols-rounded
+                {
+                    color:rgb(0, 0, 0);
+                    font-size: 50px;
+                }
+
+                .BackButton:active
+                {
+                    background-color: rgb(172, 10, 10);
+                }
+
+                tbody tr td
+                {
+                    font-size: 12px;
+                    font-weight: lighter;
+                }
+                .Circle
+                {
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 20px;
+                    background-color: grey;
+                    padding: 5px;
+                }
+
+                #GreenCircle
+                {
+                    background-color: green;
+                }
+
+                #YellowCircle
+                {
+                    background-color: #e1ec14;
+                }
+
+                #OrangeCircle
+                {
+                    background-color: #f37221;
+                }
+
+                #RedCircle
+                {
+                    background-color: #ED1C24;
+                }
+
+                td select
+                {
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                #SubmitButton
+                {
+                    background-color: #FBCE07;
+                }
+
+                #SubmitButton:hover
+                {
+                    background-color: #ED1C24;
+                    color: black;
+                    border: 5px solid black;
+                }
+
+                #TLNameSelection, #LocationSelection, #ComplianceStatusSelection, #ActionStatusSelection
+                {
+                    visibility: hidden;
+                }
+
+                #CategoryTable:hover tr
+                {
+                    background-color: white;
+                    border: none;
+                }
+
+                td input
+                {
+                    width: 100%;
+                    height: 30%;
+                }
+            </style>             
+            </script>
+        </head>
+        <body>
+            <button type = "button" class = "BackButton" onclick = "document.location = 'SelectFunctionsRTEngineer.html'">
+                <i class="material-symbols-rounded">reply</i>
+            </button>
+            <div class = "Heading" style = "font-size: 60px; display: block; padding-top: 3%; padding-bottom: 3%;">DASHBOARD</div>
+            <br/>
+            <div style = "margin-left:auto; margin-right: auto; text-align: center;">
+                <iframe title="Dashbaord" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiNTYyZWQ2M2EtNTU4Mi00NzBiLTk0MDctZTYzY2RlMzMwNmU2IiwidCI6ImZlZTNiOTE2LTAxYzEtNDk4Ny1hNjQ2LWUxOTM0MzJiOWVhYSIsImMiOjl9&pageName=ReportSection72fc9e27903ba6e18579" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </body>
+    </html>

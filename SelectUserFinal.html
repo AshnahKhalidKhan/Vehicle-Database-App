@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link CSS file-->
+        <link rel= "stylesheet" href = "Template.css">
+        <!--Link JavaScript file-->
+        <script type="text/javascript" src="Template.js"></script>
+        <!--Give webpage a name-->
+        <title>User Select</title>
+        <!--Give webpage a favicon icon-->
+        <link rel = "icon" type = "image/x-icon" href = "Favicon Images/favicon.ico">
+        <!--Icons Link-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,-25" />
+        <style>
+            th, td
+            {
+                
+                border: none;
+                font-size: 70px;
+                color: rgb(52, 51, 51);
+            }
+
+            th
+            {
+                padding: 20px;
+            }
+
+            button
+            {
+                font-family: 'League Spartan';
+                width: 100%;
+                height: 100%;
+                border: 5px solid rgb(52, 51, 51);
+                background-color:  #FFD500;
+                padding: 20px;
+                color: rgb(52, 51, 51);
+                text-align: center;
+                cursor:pointer;
+            }
+
+            button:hover
+            {
+                border: 5px solid #FFD500;
+                background-color:  rgb(52, 51, 51);
+                padding: 20px;
+                color: #FFD500;
+                font-weight: bold;
+            }
+
+            button:active
+            {
+                border: 5px solid rgb(52, 51, 51);
+                background-color:  #FFD500;
+                padding: 20px;
+                color: rgb(52, 51, 51);
+            }
+
+            .material-icons
+            {
+                color: rgb(52, 51, 51);
+                font-size: 60px;
+                transition-property: color;
+            }
+
+            button:hover .material-icons
+            {
+                color: #FFD500;
+                font-size: 70px;
+            }
+
+            button:active .material-icons
+            {
+                color: rgb(52, 51, 51);
+                font-size: 70px;
+            }
+        </style>
+    </head>
+    <body >
+        <!--Background image and heading area-->        
+        <table>
+            <thead>
+                <th colspan = "5">SELECT USER</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type = "button" onclick = "document.location='RTEngineerLoginFinal.php'">
+                            <i class="material-icons">engineering</i>
+                            <br/>
+                            RT Engineer
+                        </button>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <button type = "button" onclick = "document.location='RTCCLoginFinal.php'">
+                            <i class="material-icons">groups_3</i>
+                            <br/>
+                            RTCC
+                        </button>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td>
+                    <td>
+                        <button type = "button" onclick = "document.location='TerminalInspectorLoginFinal.php'">
+                            <i class="material-icons">groups_2</i>
+                            <br/>
+                            Terminal Inspector
+                        </button>
+                    </td>
+                    <td></td><td></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
